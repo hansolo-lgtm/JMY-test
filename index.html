@@ -1,0 +1,15 @@
+<!doctype html>
+<h2>Type the secret word</h2>
+<input id="key">
+<button onclick="check()">Go</button>
+
+<script>
+function check(){
+  const correct = "redballoon23";   // ← change this word
+  if (document.getElementById('key').value.trim() === correct){
+    window.location.href = "start.pdf";  // ← change if file name differs
+  } else {
+    alert("Wrong word. Try again!");
+  }
+}
+</script>
